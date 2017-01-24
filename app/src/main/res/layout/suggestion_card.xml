@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:layout_marginBottom="4dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:src="@drawable/ic_account_circle_grey_300_24dp"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:id="@+id/cook_image"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FFFFFF"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:text="Oumar Hadramy"
+                android:textColor="@android:color/black"
+                fontPath="fonts/Montserrat-Regular.ttf"
+                android:textStyle="bold"
+                android:id="@+id/cook_name"
+                android:gravity="center|start|bottom" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="cuisine"
+                android:layout_margin="5dp"
+                android:id="@+id/cook_address"
+                fontPath="fonts/Montserrat-Regular.ttf"
+                android:gravity="center|start|top" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="4.5"
+            fontPath="fonts/Montserrat-Regular.ttf"
+            android:id="@+id/cook_rating"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#03A9F4"
+            android:textSize="16sp"/>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

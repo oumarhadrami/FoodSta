@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.hadrami.oumar.foodsta.SearchActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+        <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:imeOptions="actionSearch"
+                android:ellipsize="end"
+                android:backgroundTint="@android:color/white"
+                android:foregroundTint="@android:color/white"
+                android:textColor="@android:color/white"
+                android:hint="Search cooks, dishes, cuisine.. "
+                android:textColorHint="@color/card_shadow_2"
+                android:background="@android:color/transparent"
+                android:maxLines="1"
+                android:id="@+id/search_text"
+                android:singleLine="true" />
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_gravity="center"
+            android:visibility="invisible"
+            android:id="@+id/progressBar2" />
+
+        <ImageButton
+                android:layout_width="match_parent"
+                android:src="@drawable/ic_clear_white_24dp"
+                android:layout_height="match_parent"
+                android:background="?android:attr/selectableItemBackground"
+                android:id="@+id/clear_text" />
+
+    </FrameLayout>
+
+</LinearLayout>
+            </android.support.v7.widget.Toolbar>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_search" />
+
+
+
+</android.support.design.widget.CoordinatorLayout>
